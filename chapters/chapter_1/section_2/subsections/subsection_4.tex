@@ -8,11 +8,65 @@
   \label{
     subsec:formulazione-matematica-del-principio-di-sovrapposizione
   }
-  \begin{quote}
-    Il processo di sovrapposizione risulta come una specie di
-    processo additivo.
-  \end{quote}
-  Per trattare la meccanica quantistica è necessario usare vettori
+  Il processo di sovrapposizione risulta come una specie di
+  processo additivo il cui risultato è dello stesso tipo degli
+  addendi.
+  Gli oggetti matematici più indicati sono quindi i vettori
+  (qualcuno potrebbe affermare che anche un gruppo ha questa
+  proprietà, ma hey noi non siamo Dirac). \\
+  Per trattare la meccanica quantistica utilizzeremo quindi
+  \textbf{vettori a componenti complesse}, ma avremo bisogno di
+  infinite dimensioni (per il momento la cosa cade dal cielo). \\
+  I vettori associati ad uno stato del sistema sono denominati
+  \say{\textit{[vettori] ket}} e il ket $A$ è indicato come
+  $\ket{A}$. \\
+  Essendo per l'appunto vettori, ogni combinazione lineare di ket è
+  a sua volta un ket, ma supponendo una dipendenza da una variabile
+  $x$ vale anche
+  \begin{equation*}
+    \int \ket{x} dx = \ket{Q}
+  \end{equation*}
+  Un ket ottenibile come combinazione lineare di altri ket è detto
+  dipendente da essi, e un insieme di ket si dice indipendente se
+  nessuno dei suoi elementi è esprimibile come c.l. degli altri. \\
+  Fatte queste premesse è ora possibile sfruttare l'equivalenza tra
+  il concetto di sovrapposizione di stati e quello di combinazione
+  lineare di ket, dalla quale è banale notare che:
+  \begin{equation*}
+    c_1 \ket{A} + c_2\ket{B} = \ket{C} \Rightarrow
+    \frac{c_1}{c_2} \ket{A} - \frac{1}{c_2} \ket{C} = \ket{B}
+  \end{equation*}
+  E giungere quindi alla conclusione che gli stati sovrapposti per
+  creare altri stati sono a loro volta esprimibili in funzione degli
+  stati generati e dei restanti stati sovrapposti. \\
+
+  L'intuito ci dice però che sovrapponendo uno stato con se stesso
+  io non debba fare altro che ritrovare lo stato stesso,
+  matematicamente, sfruttando le proprietà dei vettori:
+  \begin{equation*}
+    c_1 \ket{A} + c_2 \ket{A} = (c_1 + c_2) \ket{A}
+  \end{equation*}
+  E giungiamo necessariamente alla conclusione che il ket $c
+  \ket{A}$ sia associato allo stesso stato del ket $\ket{A}$.
+  Ad essere associato allo stato non è quindi il ket in sé ma la usa
+  \say{direzione}, se di direzione si può parlare \textit{(N.B. nel
+  caso in cui $c_1 + c_2 = 0$ il ket risultante è chiaramente
+  nullo, ma questo è solo un caso particolare che non trattiamo ora,
+  anticipiamo però che il ket nullo non corrisponde a nessuno
+  stato)}. \\
+  La dipendenza dalla sola direzione ha anche un'altra importante
+  implicazione: dato che lo stato risultante non varia a seguito di
+  una moltiplicazione per fattore complesso, a determinare il
+  risultato non sono le costanti moltiplicative dei ket che sommo,
+  ma il loro rapporto, dato che esso rimane invariato anche dopo la
+  moltiplicazione
+  ($\frac{c_1}{c_2} = \frac{d \cdot c_1}{d \cdot c_2}$).
+  Ciò chiaramente riduce il numero di gradi di libertà del nostro
+  risultato da 4 a 2: 4 perché ogni numero complesso è definito da
+  parte reale e parte immaginaria, quindi 2 fattori moltiplicativi
+  $\to$ 4 parametri reali, ed ora 2 perché da 2 fattori
+  complessi si passa nel pratico ad 1: il loro rapporto.
+
 
 
 \end{document}
