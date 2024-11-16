@@ -1,0 +1,28 @@
+\documentclass{scrbook}
+
+\title{Appunti Meccanica quantistica}
+\subtitle{
+Basato su: I Princìpi della meccanica statistica (P. Dirac) 
+}
+\author{Paolo Forni}
+\date{\today}
+
+\usepackage{dirtytalk} % Per mettere le cose tra virgolette
+\usepackage{tcolorbox} % Per le citazioni stile markdown
+\usepackage{subfiles} % Meglio includerlo per ultimo
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\chapter{Il principio di sovrapposizione}
+  \label{chap:il-principio-di-sovrapposizione}
+
+  % Introduzione sulla necessità di una nuova teoria meccanica
+  \subfile{chapters/chapter_1/section_1/section_1.tex}
+  % Sovrapposizione e indeterminazione
+  \subfile{chapters/chapter_1/section_2/section_2.tex}
+
+
+\end{document}
